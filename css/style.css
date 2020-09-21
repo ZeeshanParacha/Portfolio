@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header 
+{
+    box-shadow: 0 1px 10px 0px rgba(0,0,0, 0.2);
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+.header .sMedia
+{
+    display: inline-block;
+}
+
+.header .sMedia .fab
+{
+    color: gray;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.header .sMedia .fab:hover
+{
+    color: #00c5ff;
+    font-size: 1.5em;
+    transition: 0.3s ease-in-out;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+.header .menu
+{
+    float: right;
+}
+
+.header .menu ul
+{
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.header .menu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 12px;
+}
+
+.header .menu ul li a
+{
+    font-size: 0.8em;
+    color: gray;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header .menu ul li a .fas
+{
+    margin-right: 5px;
+    color: #00c5ff;
+}
+
+.header .menu ul li .link1::after
+{
+    content: "";
+    width: 16px;
+    height: 1px;
+    border: 1px solid #00c5ff;
+    position: absolute;
+    transform: translate(-37px, 25px);
+    opacity: 0;
+}
+
+.header .menu ul li .link1:hover::after
+{
+    transform: translate(-37px, 25px);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.header .menu ul li .link2::after
+{
+    content: "";
+    width: 16px;
+    height: 1px;
+    border: 1px solid #00c5ff;
+    position: absolute;
+    transform: translate(-24px, 25px);
+    opacity: 0;
+}
+
+.header .menu ul li .link2:hover::after
+{
+    transform: translate(-24px, 25px);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.header .menu ul li .link3::after
+{
+    content: "";
+    width: 16px;
+    height: 1px;
+    border: 1px solid #00c5ff;
+    position: absolute;
+    transform: translate(-34px, 25px);
+    opacity: 0;
+}
+
+.header .menu ul li .link3:hover::after
+{
+    transform: translate(-34px, 25px);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.header .menu ul li .link4::after
+{
+    content: "";
+    width: 16px;
+    height: 1px;
+    border: 1px solid #00c5ff;
+    position: absolute;
+    transform: translate(-33px, 25px);
+    opacity: 0;
+}
+
+.header .menu ul li .link4:hover::after
+{
+    transform: translate(-33px, 25px);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.header .menu #label
+{
+    display: none;
+}
+
+.header .menu #check
+{
+    display: none;
+}
+
+@media (max-width: 500px)
+{
+    .header .menu #label
+    {
+        cursor: pointer;
+        display: block;
+        color: #00c5ff;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    .header .menu ul
+    {
+        display: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .header .menu ul li 
+    {
+        display: block;
+        margin-top: 15px;
+    }
+
+    #check:checked ~ ul 
+    {
+        display: block;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .header .logo
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .menu
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .menu ul
+    {
+        float: none;
+    }
+
+    .header .sMedia 
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.port .div0
+{
+    text-align: center;
+}
+
+.port .hd1
+{
+    text-align: center;
+    font-weight: 700;
+    color: gray;
+    margin-top: 180px;
+    display: inline-block;
+}
+
+.port .hd1::after
+{
+    content: "";
+    width: 37px;
+    height: 4px;
+    background-color: #00c5ff;
+    position: absolute;
+    transform: translate(-150px, 38px);
+}
+
+.port .hd1:hover::after
+{
+    transform: translate(-40px, 38px);
+    transition: 0.5s ease-in-out;
+}
+
+.port .hd2
+{
+    margin-top: 100px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.port .div1
+{
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.port .div1:hover
+{
+    background-color: rgba(0,0,0, 0.5);
+    transition: 0.8s ease-in-out;
+    box-shadow: none;
+}
+
+.port .div1:hover > h5
+{
+    z-index: 0;
+}
+
+.port .div1:hover > a > .far
+{
+    display: block;
+}
+
+.port .div1:hover > a > .fab
+{
+    display: block;
+}
+
+.port .div1 h5
+{
+    font-weight: 600;
+    color: gray;
+}
+
+.port .div1 p
+{
+    color: gray;
+    font-size: 0.9em;
+}
+
+.port .div1 .far
+{
+    color: white;
+    padding: 5px 4px;
+    border-radius: 25px;
+    border: 3px solid white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 65px;
+    left: 120px;
+    display: none;
+    cursor: pointer;
+}
+
+.port .div1 .fab
+{
+    color: white;
+    padding: 5px 5.4px;
+    border-radius: 25px;
+    border: 3px solid white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 65px;
+    display: none;
+    right: 130px;
+    cursor: pointer;
+}
+
+.port .div2
+{
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 37px;
+    position: relative;
+}
+
+.port .div2:hover
+{
+    background-color: rgba(0,0,0, 0.5);
+    transition: 0.8s ease-in-out;
+    box-shadow: none;
+}
+
+.port .div2:hover > a > .far
+{
+    display: block;
+}
+
+.port .div2:hover > a > .fab
+{
+    display: block;
+}
+
+.port .div2 h5
+{
+    font-weight: 600;
+    color: gray;
+}
+
+.port .div2 p:first-of-type
+{
+    font-size: 0.8em;
+}
+
+.port .div2 p
+{
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.port .div2 .far
+{
+    color: white;
+    padding: 5px 4px;
+    border-radius: 25px;
+    border: 3px solid white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 65px;
+    left: 120px;
+    display: none;
+    cursor: pointer;
+}
+
+.port .div2 .fab
+{
+    color: white;
+    padding: 5px 5.4px;
+    border-radius: 25px;
+    border: 3px solid white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 65px;
+    display: none;
+    right: 155px;
+    cursor: pointer;
+}
+
+@media (max-width: 1199px) and (min-width: 992px)
+{
+    .port .div1 .far 
+    {
+        left: 90px;
+    }
+
+    .port .div1 .fab
+    {
+        right: 90px;
+    }
+
+    .port .div2 .far 
+    {
+        left: 90px;
+    }
+
+    .port .div2 .fab
+    {
+        right: 122px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px)
+{
+    .port .div2 .far 
+    {
+        left: 110px;
+    }
+
+    .port .div2 .fab
+    {
+        right: 142px;
+    }
+
+    .port .div1 .far 
+    {
+        left: 110px;
+    }
+
+    .port .div1 .fab
+    {
+        right: 110px;
+    }
+}
+
+@media (max-width: 575px)
+{
+    .port .col-sm-6
+    {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 520px)
+{
+    .port .div1 .fab
+    {
+        right: 30%;
+    }
+
+    .port .div1 .far
+    {
+        left: 30%;
+    }
+
+    .port .div2 .fab
+    {
+        right: 40%;
+    }
+
+    .port .div2 .far
+    {
+        left: 30%;
+    }
+}
+
+.port .div3
+{
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.port .div3 h5
+{
+    font-weight: 600;
+    color: gray;
+}
+
+.port .div3:hover
+{
+    background-color: rgba(0,0,0, 0.5);
+    transition: 0.8s ease-in-out;
+    box-shadow: none;
+}
+
+.port .div3:hover > a > .far
+{
+    display: block;
+}
+
+.port .div3:hover > a > .fab
+{
+    display: block;
+}
+
+.port .div3 .far
+{
+    color: white;
+    padding: 5px 4px;
+    border-radius: 25px;
+    border: 3px solid white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 65px;
+    left: 44%;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) and (min-width: 576px)
+{
+    .port .div3 .far
+    {
+        left: 40%;
+    }
+}
+
+.services .div0
+{
+    text-align: center;
+}
+
+.services .hd1
+{
+    text-align: center;
+    font-weight: 700;
+    color: gray;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.services .hd1::after
+{
+    content: "";
+    width: 37px;
+    height: 4px;
+    background-color: #00c5ff;
+    position: absolute;
+    transform: translate(-143px, 38px);
+}
+
+.services .hd1:hover::after
+{
+    transform: translate(-40px, 38px);
+    transition: 0.5s ease-in-out;
+}
+
+.services .div1
+{
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    padding: 30px 20px 10px 20px;
+    margin-top: 50px;
+}
+
+.services .div1:hover
+{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.services .div1:hover > .fas
+{
+    color: #00c5ff;
+    transition: 0.5s ease-in-out;
+}
+
+.services .div1:hover > .fab
+{
+    color: #00c5ff;
+    transition: 0.5s ease-in-out;
+}
+
+.services .div1 .fas
+{
+    font-size: 4em;
+    color: gray;
+}
+
+.services .div1 .fab
+{
+    font-size: 4em;
+    color: gray;
+}
+
+.services .div1 h5
+{
+    font-weight: 700;
+    color: gray;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.services .div1 p
+{
+    color: gray;
+    font-size: 0.9em;
+}
+
+@media (max-width: 575px)
+{
+    .col-sm-6
+    {
+        width: 70%;
+    }
+}
+
+.about .div0
+{
+    text-align: center;
+}
+
+.about .hd1
+{
+    text-align: center;
+    font-weight: 700;
+    color: gray;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.about .hd1::after
+{
+    content: "";
+    width: 37px;
+    height: 4px;
+    background-color: #00c5ff;
+    position: absolute;
+    transform: translate(-112px, 38px);
+}
+
+.about .hd1:hover::after
+{
+    transform: translate(-43px, 38px);
+    transition: 0.5s ease-in-out;
+}
+
+.about p
+{
+    color: gray;
+    text-align: center;
+}
+
+.about .button
+{
+    text-align: center;
+}
+
+.about .button a
+{
+    display: inline-block;
+    background-color: #00c5ff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.about .button a:hover
+{
+    text-decoration: none;
+    background-color: gray;
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 767px)
+{
+    .about p
+    {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 510px)
+{
+    .about p br
+    {
+        content:' ';
+    }
+}
+
+.skill .div0
+{
+    text-align: center;
+}
+
+.skill .hd1
+{
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    color: gray;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.skill .hd1::after
+{
+    content: "";
+    width: 37px;
+    height: 4px;
+    background-color: #00c5ff;
+    position: absolute;
+    transform: translate(-102px, 38px);
+}
+
+.skill .hd1:hover::after
+{
+    transform: translate(-43px, 38px);
+    transition: 0.5s ease-in-out;
+}
+
+.skill .div1
+{
+    text-align: center;
+}
+
+.skill .fab
+{
+    color: gray;
+    font-size: 5em;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skill .fab:hover
+{
+    color: #00c5ff;
+    font-size: 6em;
+    transition: 0.5s ease-in-out;
+    margin-top: 0px;
+    margin-bottom: 28px;
+}
+
+.footer 
+{
+    box-shadow: 0 -1px 10px 0px rgba(0,0,0, 0.2);
+    margin-top: 100px;
+}
+
+.footer p
+{
+    text-align: center;
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
